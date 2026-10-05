@@ -9,7 +9,7 @@
         ./programs/editor.nix
 	./programs/codex.nix
 
-	./desktop/hyprland.nix
+	./desktop/niri.nix
 	./desktop/waybar.nix
 	./desktop/wofi.nix
 	./desktop/notifications.nix

@@ -12,7 +12,7 @@
 	../../modules/core/nix.nix
 	../../modules/core/users.nix
 
-	../../modules/desktop/hyprland.nix
+	../../modules/desktop/niri.nix
 	
 	../../modules/services/docker.nix
 	../../modules/services/ssh.nix
