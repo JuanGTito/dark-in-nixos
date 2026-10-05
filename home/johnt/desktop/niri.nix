@@ -2,7 +2,10 @@
 
 {
   home.packages = with pkgs; [
-    xwayland-satellite
+    grim
+    slurp
+    swaybg
+    wl-clipboard
   ];
 
   xdg.configFile."niri/config.kdl".text = ''
@@ -24,23 +27,25 @@
 
     binds {
         Mod+Return {
-            spawn "kitty"
+            spawn "kitty";
         }
 
         Mod+D {
-            spawn "wofi" "--show" "drun"
+            spawn "wofi" "--show" "drun";
         }
 
         Mod+Q {
-            close-window
+            close-window;
         }
 
         Mod+Shift+E {
-            quit
+            quit;
         }
     }
 
     spawn-at-startup "waybar"
     spawn-at-startup "mako"
+    spawn-at-startup "${pkgs.swaybg}/bin/swaybg" "-i" "${./assets/wall.png}" "-m" "fill"
+    spawn-at-startup "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
   '';
 }

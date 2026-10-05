@@ -5,14 +5,9 @@
     settings.mainBar = {
       layer = "top";
       position = "top";
-      modules-left = [ "hyprland/workspaces" ];
-      modules-center = [ "hyprland/window" ];
+      modules-left = [ ];
+      modules-center = [ ];
       modules-right = [ "pulseaudio" "network" "clock" "battery" "tray" ];
-      "hyprland/workspaces" = {
-        on-click = "activate";
-        persistent-workspaces = { "1" = []; "2" = []; "3" = []; "4" = []; "5" = []; };
-      };
-      "hyprland/window".max-length = 45;
       clock = { format = "{:%H:%M  %d/%m}"; format-alt = "{:%d/%m/%Y}"; };
       network = {
         format-wifi = " {essid}";

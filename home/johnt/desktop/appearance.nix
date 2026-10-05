@@ -1,11 +1,4 @@
 { pkgs, ... }: {
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      splash = false;
-      wallpaper = [{ monitor = ""; path = "${./assets/wall.png}"; fit_mode = "cover"; }];
-    };
-  };
   gtk = {
     enable = true;
     theme = {
